@@ -1,0 +1,52 @@
+// FONT
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+// VARS
+$primary-color: #0f4c75;
+$secondary-color: #6b9bd4;
+$default-font-size: 1.6rem;
+
+// MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+  // Phone-xs
+  @if $breakpoint == phone-xs {
+    @media (max-width: 20em) {
+      @content;
+    } //0 - 320px
+  }
+  // Phone
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //0 - 600px
+  }
+  // Table Portrait
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  // Table Landscape
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}

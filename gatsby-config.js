@@ -1,9 +1,3 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
   plugins: [
     {
@@ -15,15 +9,20 @@ module.exports = {
         assetPath: "", //  assets url "/content/assets"
       },
     },
+    `gatsby-plugin-sass`,
   ],
   siteMetadata: {
     url: "https://localhost:8000",
-    title: "Csaba Gyorfi",
-    author: "Csaba Gyorfi",
+    title: "Csaba Gyõrfi",
+    author: "Csaba Gyõrfi",
     description: "My personal website and blog",
+    aboutMe: [
+      "Hi, my name is Csaba Gyõrfi",
+      "I'm a software engineer 👨‍💻",
+      "I like lemon tea 🍵",
+    ],
     locale: "en",
     socialLinks: [
-      // links displayed in footer
       {
         text: "Twitter",
         link: "https://twitter.com/c_gyorfi_audio",
@@ -38,14 +37,9 @@ module.exports = {
       },
     ],
     navLinks: [
-      // links display in navbar
       {
         text: "Blog",
         link: "/blog",
-      },
-      {
-        text: "Contact",
-        link: "/contact",
       },
       {
         text: "About",
