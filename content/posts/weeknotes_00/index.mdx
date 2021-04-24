@@ -1,0 +1,47 @@
+---
+type: post
+title: Weeknotes 0 - Grokking Algorithms
+date: 2021-03-14
+draft: false
+media: ./img1.jpeg
+author: Csaba Gyõrfi
+tags:
+  - Weeknotes
+  - binary search
+---
+
+I had a chat with my line manager, David on On Friday. 
+He mentioned [weeknotes](https://stamanfar.medium.com/the-why-of-weeknotes-cf4d7e8ad4e5)
+as a light alternative to blog posts. I'll aim to use this format as a way of tracking what I've learned in a given week. 
+
+This week I continued reading [Grokking Algorithms](https://www.amazon.co.uk/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230), 
+which is easily the most enjoyable techie book I've ever read. 
+It's the perfect book for refreshing or filling up some gaps in your CS knowledge. 
+Based on some of the [examples](https://github.com/egonSchiele/grokking_algorithms), 
+I wrote a binary search function that uses recursion. 
+I've tried to simplify the solution as much as possible, so it's easy to understand the concept. 
+
+```python
+# Recursive binary search
+# Return the number if its in the array or return "Not found"
+def search_recursive(list, item):
+  low = 0
+  high = len(list)-1
+  if high >= low: 
+      mid = (high + low) // 2
+      guess = list[mid]
+
+      if guess == item:
+          return guess 
+      elif guess > item: 
+          return search_recursive(list[low:mid], item) 
+      else: 
+          return search_recursive(list[mid+1: len(list)], item) 
+  else: 
+      return "Not found"
+```
+
+I've also learnt about the Divide-and-conquer algorithm and 
+the [Euclidean algorithm]( https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm).
+
+Apparently, [functional components](https://www.twilio.com/blog/react-choose-functional-components) are cooler than class components when it comes to React!
