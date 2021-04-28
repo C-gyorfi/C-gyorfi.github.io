@@ -42,6 +42,10 @@ module.exports = {
         link: "/blog",
       },
       {
+        text: "Contact",
+        link: "/blog/contact",
+      },
+      {
         text: "About",
         link: "/",
       },
