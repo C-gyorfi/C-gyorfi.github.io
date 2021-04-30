@@ -6,7 +6,8 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public -b release",
+    "deploy": "gatsby build && gh-pages -d public -b release -r https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/c-gyorfi/C-gyorfi.github.io.git",
+    "deploy-local": "gatsby build && gh-pages -d public -b release",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
