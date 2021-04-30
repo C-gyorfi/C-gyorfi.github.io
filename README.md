@@ -25,7 +25,7 @@ To run the application for local development:
 gatsby develop
 ```
 
-Then visit [http://localhost:3000](http://localhost:8000).
+Then visit [http://localhost:8000](http://localhost:8000).
 
 ### Running the formatter
 
@@ -34,3 +34,12 @@ To run formatting using [Prettier](https://prettier.io/):
 ```sh
 yarn format
 ```
+
+### Deploying the application
+
+Deployed using [gh-pages](https://www.npmjs.com/package/gh-pages) node module, published from the `release` branch.
+
+```sh
+yarn deploy
+```
+
