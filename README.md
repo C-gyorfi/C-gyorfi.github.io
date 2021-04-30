@@ -1,3 +1,5 @@
+![Deployment](https://github.com/C-gyorfi/C-gyorfi.github.io/actions/workflows/deploy.yml/badge.svg)
+
 # My personal website and blog
 
 ### Built with
