@@ -12,7 +12,7 @@ module.exports = {
     `gatsby-plugin-sass`,
   ],
   siteMetadata: {
-    url: "https://localhost:8000",
+    url: "https://c-gyorfi.github.io",
     title: "Csaba Gyõrfi",
     author: "Csaba Gyõrfi",
     description: "My personal website and blog",
