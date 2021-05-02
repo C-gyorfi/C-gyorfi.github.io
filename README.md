@@ -42,4 +42,3 @@ Deployed using [gh-pages](https://www.npmjs.com/package/gh-pages) node module, p
 ```sh
 yarn deploy
 ```
-
